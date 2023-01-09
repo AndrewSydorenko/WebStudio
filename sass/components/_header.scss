@@ -1,0 +1,96 @@
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+
+    &__up {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+    }
+
+    &__down {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--background-color);
+    }
+}
+
+.justify-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0;
+
+    & li+li {
+        margin-left: 50px;
+    }
+}
+
+.header-contacts__link {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    align-items: center;
+    gap: 10px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
+}
+
+.header-contacts__icon {
+    display: inline-block;
+    fill: var(--primary-text-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+        fill: var(--accent-color);
+    }
+}

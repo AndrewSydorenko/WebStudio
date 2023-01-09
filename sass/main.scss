@@ -1,0 +1,22 @@
+// Utils styles
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/mixin';
+@import './utils/placeholders';
+
+// Components style
+@import './components/base';
+@import './components/button';
+
+// Sections
+@import './components/container';
+@import './components/header';
+@import './components/nav';
+@import './components/hero';
+@import './components/benefits';
+@import './components/speciality';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/cards';

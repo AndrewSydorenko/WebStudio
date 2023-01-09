@@ -1,0 +1,126 @@
+button {
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.hero__button {
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    max-width: 216px;
+    padding: 10px 32px;
+    text-align: center;
+    border: 1px solid transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    cursor: pointer;
+    color: var(--hero-color);
+}
+
+.subscribe__btn {
+    position: relative;
+
+    width: 200px;
+    height: 50px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 62px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: var(--hero-background);
+        background-color: var(--accent-color);
+    }
+}
+
+.work-filter__button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--background-color);
+        background-color: var(--accent-color);
+    }
+}
+
+.work-filter__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.work-filter__list li:not(last child) {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 124px;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
