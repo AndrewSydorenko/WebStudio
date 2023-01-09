@@ -1,5 +1,9 @@
 .section-speciality {
     padding-top: 0;
+
+    @media (max-width: 1199.08px) {
+        display: none;
+    }
 }
 
 .section-speciality__title {

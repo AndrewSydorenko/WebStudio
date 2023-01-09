@@ -1,7 +1,9 @@
 .clients-list {
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
     margin: 0;
     padding-left: 0;
 }

@@ -1,15 +1,15 @@
 .container {
-    max-width: 480px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (min-width:767.08px) {
-    max-width: 768px;       
+    @media screen and (min-width: 767.08px) {
+        width: 768px;
     }
 
-    @media screen and (min-width:1199.08px) {
-        max-width: 1200px;   
+    @media screen and (min-width: 1199.08px) {
+        width: 1200px;
     }
 }

@@ -1,4 +1,4 @@
-header {
+.page-header {
     border-bottom: 1px solid #ececec;
 }
 
@@ -9,7 +9,7 @@ header {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--accent-color);
@@ -18,7 +18,6 @@ header {
         font-family: "Raleway";
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
@@ -28,10 +27,13 @@ header {
         font-family: "Raleway";
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: var(--background-color);
+    }
+
+    @media screen and (min-width: 1199.08px) {
+        font-size: 26px;
     }
 }
 
