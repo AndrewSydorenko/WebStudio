@@ -248,6 +248,7 @@ button:hover {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .logo {
@@ -277,6 +278,12 @@ button:hover {
   letter-spacing: 0.03em;
   color: var(--background-color);
 }
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 @media screen and (min-width: 1199.08px) {
   .logo {
     font-size: 26px;
@@ -293,30 +300,75 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .justify-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.mobile-close-icon {
+  display: none;
+}
+
+.menu-button.is-open .mobile-close-icon {
+  display: block;
+}
 
 .header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  -ms-flex-line-pack: center;
-      align-content: center;
   margin-bottom: 0;
   margin-top: 0;
   margin-left: auto;
   padding: 0;
 }
 .header-contacts li + li {
-  margin-left: 50px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+.header-contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -357,6 +409,7 @@ button:hover {
 }
 
 .nav {
+  margin-left: 91px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,10 +417,14 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav__list {
   padding: 0;
-  margin-left: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,6 +483,24 @@ button:hover {
   margin-top: 28.5px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+.nav-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 315px;
+}
+@media screen and (max-width: 768px) {
+  .nav-hide {
+    display: none;
+  }
 }
 
 .hero {

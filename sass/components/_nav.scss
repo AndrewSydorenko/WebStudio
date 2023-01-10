@@ -1,12 +1,16 @@
 .nav {
-
+    margin-left: 91px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:768px) {
+        display: none;
+
+    }
 }
 
 .nav__list {
     padding: 0;
-    margin-left: 93px;
     display: flex;
     margin-right: auto;
     margin-top: 0;
@@ -67,5 +71,16 @@
 
         background: #2196f3;
         border-radius: 2px;
+    }
+}
+
+.nav-hide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 315px;
+
+    @media screen and (max-width:768px) {
+        display: none;
     }
 }
