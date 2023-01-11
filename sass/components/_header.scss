@@ -90,7 +90,7 @@
 .header-contacts__link {
     display: flex;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
@@ -105,15 +105,19 @@
     &:focus {
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--accent-color);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 1200px) {
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 14px;
         letter-spacing: 0.02em;
     }

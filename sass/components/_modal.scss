@@ -23,8 +23,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 38px 40px 40px;
 
     background-color: var(--background-color);
@@ -36,6 +36,12 @@
         animation-name: opacityModal;
         animation-duration: 6000ms;
         animation-timing-function: cubic-bezier(0.9, -0.2, 0.54, 0.98);
+    }
+
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
     }
 }
 
@@ -114,7 +120,7 @@
 }
 
 .modal__field {
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 45px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -133,14 +139,24 @@
         border: 1px solid var(--accent-color);
         outline: transparent;
     }
+
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 .modal__item textarea {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
+    }
 }
 
 label {
@@ -179,7 +195,7 @@ label {
     margin-bottom: 20px;
 
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
 
     font-style: normal;
@@ -200,6 +216,10 @@ label {
         border: 1px solid var(--accent-color);
         outline: transparent;
 
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
     }
 }
 
@@ -268,10 +288,14 @@ label {
     margin-bottom: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
 
     letter-spacing: 0.03em;
 
     color: #757575;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+    }
 }
